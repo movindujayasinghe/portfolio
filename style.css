@@ -77,6 +77,75 @@
       padding: clamp(1.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 3rem) 4rem
     }
 
+    /* ----- NAV BAR (sticky / scroll) ----- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e6ed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: background 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.nav-logo {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #0b0b16;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-logo:hover {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.5rem;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2d3142;
+  text-decoration: none;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+  text-decoration: none;
+}
+
     /* Hero */
     .hero {
       padding: clamp(2rem, 9vw, 7rem) 0 clamp(3rem, 8vw, 6rem)
