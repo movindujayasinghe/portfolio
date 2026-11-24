@@ -11,9 +11,11 @@
 </head>
 
 <body>
-    <nav class="navbar">
+
+  <!-- Sticky nav bar -->
+  <nav class="navbar">
     <div class="navbar-inner">
-      <a class="nav-logo" href="#">Movindu.</a>
+      <a class="nav-logo" href="#top">Movindu.</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -23,7 +25,8 @@
       </ul>
     </div>
   </nav>
-  <main class="page">
+
+  <main class="page" id="top">
 
     <header class="hero">
       <p class="status">Open to internships and placements</p>
@@ -38,14 +41,16 @@
       </div>
     </header>
 
-    <section>
+    <section id="about">
       <h2>About</h2>
       <div class="content">
-        <p>Computing undergraduate at LNBTI who builds software for real-world use, from Java business applications to a custom Android dashboard I wrote for my own car. I'm studying networking and security so the things I build are reliable and safe.</p>
+        <p>Computing undergraduate at LNBTI who builds software for real-world use, from Java business applications to a
+          custom Android dashboard I wrote for my own car. I'm studying networking and security so the things I build
+          are reliable and safe.</p>
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <div class="content">
         <ul class="rows">
@@ -93,7 +98,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="education">
       <h2>Education</h2>
       <div class="content">
         <ul class="rows">
@@ -111,7 +116,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <div class="skills">
         <div>
@@ -133,7 +138,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
       <div class="content">
         <a class="big" href="mailto:movindujayasinghe13@gmail.com">movindujayasinghe13@gmail.com</a>
@@ -156,14 +161,14 @@
             <textarea name="Message" rows="5" required></textarea>
           </label>
           <button type="submit">Send message</button>
-          <p class="hint" style="font-size: 0.9em; color: red;">
+          <p class="hint">
             *This opens your email app with the message ready to send.
           </p>
         </form>
       </div>
     </section>
 
-    <footer>© 2026 Movindu. Built with HTML and CSS only.</footer>
+    <footer style="text-align: center; padding: 20px; font-size: 14px; color: #666;">© 2026 Movindu.</footer>
   </main>
 </body>
 
